@@ -1,0 +1,12 @@
+version: 0.2
+phase:
+  pre_build:
+    commands:
+    - echo "prebuild"
+  build:
+    commands:
+    - echo "in build"
+    - mvn clean prepare-package 
+  post_build:
+    commands:
+    - echo "in post build"
